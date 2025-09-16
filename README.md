@@ -1,5 +1,8 @@
 # programacaoC
-Repositório de códigos na linguagem de programação C referente à disciplina Introdução à Programação de Computadores do curso de Engenharia de Software
+Repositório de códigos na linguagem de programação C 
+Disciplina: Introdução à Programação de Computadores 
+Curso: Engenharia de Software
+Professor: Sérgio Cardoso
 
 ## Trabalhos da Disciplina ##
 
