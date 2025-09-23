@@ -8,3 +8,5 @@
 ## supertrunfoComparacao.c
 # TEMA 4 nível novato
 ## xadreznovato.c
+# TEMA 4 nível aventureiro
+## xadrezaventureiro.c
