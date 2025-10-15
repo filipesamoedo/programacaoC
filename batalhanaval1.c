@@ -3,16 +3,15 @@
 
 int main ()
 {   
+    // Declaração dos arrays de referência para linhas e colunas
     char linha[10] = {'A','B','C','D','E','F','G','H','I','J'};
     int coluna[10] = {1,2,3,4,5,6,7,8,9,10};
     
-    // Declaração do tabuleiro 10x10
-
+    // Declaração do tabuleiro 10x10 e variáveis de controle
     int tabuleiro[10][10];
     int i, j;
 
-    // Inicializa todas as posições com 0
-
+    // Inicializa todas as posições do tabuleiro com 0
     for(i = 0; i < 10; i++) {
         for(j = 0; j < 10; j++) {
             tabuleiro[i][j] = 0; 
@@ -20,13 +19,11 @@ int main ()
     }
 
     // FUNÇÃO IMPRIMIR TABULEIRO
-
     int imprimir_tabuleiro() {
 
         printf("TABULEIRO BATALHA NAVAL\n");
 
         // Impressao dos números-base da coluna. 
-
         printf(" "); // Espaço antes dos números da coluna
         for (j = 0; j < 10; j++)
         {
@@ -35,7 +32,6 @@ int main ()
         printf("\n");
 
         // Impresssão das letras-base da linha e do tabuleiro
-
         for(i = 0; i < 10; i++) {
             printf("%c", linha[i]); // Imprime ABC.. Antes de cada linha do tabuleiro
             for(j = 0; j < 10; j++) {
@@ -43,27 +39,23 @@ int main ()
             }
             printf("\n");
         }
-        printf("\n");
     }
 
     // Imprime o tabuleiro inicial
     imprimir_tabuleiro();
 
-    // Escolher posição para navio1 de 3 lugares. Horizontal. F1 F2 F3
-
+    // Ship1 placement Horizontal: F1 F2 F3
     for(i = 0; i < 3; i++) {
         tabuleiro[5][i] = 3; 
     }
 
-    // Escolhendo posição para navio2 de 3 lugares. Vertical. D8 E8 F8
-    
+    // Ship2 placement Vertical: D8 E8 F8
     for(i = 3; i < 6; i++) {
-        tabuleiro[i][7] = 3; // Coloca o navio na coluna 7, nas linhas 3,4 e 5
+        tabuleiro[i][7] = 3;
     }
 
     // Imprime o tabuleiro atualizado
-
-    printf("\n 2 navios cadastrados: \n");
+    printf("\n 2 navios cadastrados. \n");
     imprimir_tabuleiro();
 
     return 0;
