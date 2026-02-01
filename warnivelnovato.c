@@ -1,4 +1,4 @@
-// Curso: Engenharia de Software - Disciplina: Estrutura de Dados em C - Desafio: War Nível Novato
+// Curso: Engenharia de Software - Disciplina: Estrutura de Dados em C - Desafio: War Nível Novato 
 // Inclusão de Bibliotecas
 #include <stdio.h>
 #include <string.h>
